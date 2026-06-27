@@ -4,118 +4,119 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Bar Piscinas Fuentepelayo</title>
-<style>.galeria{
-    display:flex;
-    gap:15px;
-    flex-wrap:wrap;
-    justify-content:center;
-}
-
-.galeria img{
-    width:300px;
-    max-width:100%;
-    height:220px;
-    object-fit:cover;
-    border-radius:12px;
-}
-body{font-family:Arial,sans-serif;background:#111;color:white;margin:0}
-header{background:#222;padding:50px 20px;text-align:center}
-h1{color:#f4c400;font-size:42px}
+<style>
+body{margin:0;font-family:Arial,sans-serif;background:#111;color:#fff}
+header img{width:100%;height:320px;object-fit:cover;display:block}
+.hero{background:#222;padding:20px;text-align:center}
+.hero h1{color:#f4c400;margin:0;font-size:42px}
+.hero p{margin-top:10px}
+section{max-width:1100px;margin:auto;padding:20px}
+.card{background:#1d1d1d;padding:20px;border-radius:12px;margin-bottom:20px}
 h2{color:#f4c400}
-section{padding:20px}
-.card{background:#1d1d1d;padding:20px;margin:15px 0;border-radius:12px}
+.galeria{display:flex;gap:15px;justify-content:center;flex-wrap:wrap}
+.galeria img{width:300px;height:200px;object-fit:cover;border-radius:12px}
 .precio{float:right;color:#f4c400;font-weight:bold}
-img{width:100%;border-radius:12px;margin-top:10px}
-a{color:#f4c400}
+.item{margin-bottom:18px;border-bottom:1px solid #333;padding-bottom:10px}
+footer{background:#222;text-align:center;padding:20px;margin-top:20px}
+@media(max-width:700px){
+.hero h1{font-size:30px}
+.galeria img{width:100%;height:220px}
+}
 </style>
 </head>
 <body>
-```html
-<header>
-    <img src="WhatsApp%20Image%202026-06-25%20at%2018.05.48.jpeg"
-         alt="Bar Piscinas Fuentepelayo"
-         style="width:100%;height:350px;object-fit:cover;border-radius:0;">
 
-    <div style="padding:25px;text-align:center;background:#222;">
-        <h1>Bar Piscinas Fuentepelayo</h1>
-        <p>🍔 Hamburguesas · 🥖 Bocadillos · 🍟 Raciones · 🏊 Piscina</p>
-    </div>
+<header>
+<img src="WhatsApp%20Image%202026-06-25%20at%2018.05.48.jpeg" alt="Portada">
+<div class="hero">
+<h1>Bar Piscinas Fuentepelayo</h1>
+<p>🍔 Hamburguesas · 🥖 Bocadillos · 🍟 Raciones · 🏊 Piscina</p>
+</div>
 </header>
 
+<section>
+
 <div class="card">
-    <h2>📸 Nuestro Bar</h2>
-
-    <div class="galeria">
-        <img src="WhatsApp%20Image%202026-06-25%20at%2018.05.48.jpeg" alt="Terraza">
-        <img src="8A0C18D0-F82D-4EAB-9553-6DF70F5624C8.png" alt="Piscina">
-        <img src="FB0800F9-5BB3-4511-AA5C-030466BEC19C.png" alt="Interior">
-    </div>
-
-    <p style="text-align:center;margin-top:20px;">
-        Ven a disfrutar de nuestra terraza, buena comida, bebidas frías y el mejor ambiente de Fuentepelayo.
-    </p>
+<h2>📸 Nuestro Bar</h2>
+<div class="galeria">
+<img src="WhatsApp%20Image%202026-06-25%20at%2018.05.48.jpeg" alt="Terraza">
+<img src="8A0C18D0-F82D-4EAB-9553-6DF70F5624C8.png" alt="Piscina">
+<img src="FB0800F9-5BB3-4511-AA5C-030466BEC19C.png" alt="Interior">
 </div>
-```
+<p style="text-align:center">Ven a disfrutar de nuestra terraza, buena comida, bebidas frías y el mejor ambiente de Fuentepelayo.</p>
+</div>
+
 <div class="card">
 <h2>📞 Contacto</h2>
-<p>642 031 548<br>655 511 625</p>
+<p><strong>Teléfonos:</strong><br>642 031 548<br>655 511 625</p>
+<p><strong>📍 Dirección:</strong><br>Calle Carrayuncal 11<br>40260 Fuentepelayo (Segovia)</p>
+<p><strong>📸 Instagram:</strong> @barpiscinas.ftp</p>
+<p><strong>🕒 Horario:</strong><br>Bar: 10:30 - 23:30<br>Cocina: 13:00 - 16:00 / 19:00 - 22:30</p>
 </div>
-<div class="card">
-<h2>📍 Dirección</h2>
-<p>Calle Carrayuncal 11<br>40260 Fuentepelayo (Segovia)</p>
-</div>
-<div class="card">
-<h2>📸 Instagram</h2>
-<p>@barpiscinas.ftp</p>
+
 <div class="card">
 <h2>🍔 Hamburguesas</h2>
 
-<p><strong>Pollo Crispy</strong> <span class="precio">7€</span><br>
-Pan brioche, pollo crispy, queso cheddar, lechuga, tomate y salsa de la casa.</p>
+<div class="item"><strong>Pollo Crispy <span class="precio">7€</span></strong><br>
+Pan brioche, pollo crispy, queso cheddar, lechuga, tomate y salsa yogur.</div>
 
-<p><strong>Doble Smash</strong> <span class="precio">10€</span><br>
-Pan brioche, doble carne smash, doble cheddar, pepinillos, cebolla y salsa burger.</p>
+<div class="item"><strong>Doble Smash <span class="precio">10€</span></strong><br>
+Pan brioche, doble carne smash, doble cheddar,bacon y salsa burguer.</div>
 
-<p><strong>Buey</strong> <span class="precio">13€</span><br>
-Pan brioche, carne de buey, queso, lechuga, tomate, cebolla caramelizada y salsa especial.</p>
+<div class="item"><strong>Buey <span class="precio">13€</span></strong><br>
+Pan brioche, carne de buey, queso, lechuga, tomate, cebolla caramelizada.</div>
 
-<p><strong>Hamburguesa Normal</strong> <span class="precio">6€</span><br>
-Pan, carne de vacuno, queso, lechuga, tomate y salsa.</p>
+<div class="item"><strong>Hamburguesa Normal <span class="precio">6€</span></strong><br>
+Pan, carne de vacuno, queso y bacon.</div>
 
 </div>
 <div class="card">
 <h2>🥖 Bocadillos</h2>
 
-<p><strong>Beicon con queso</strong> <span class="precio">6€</span><br>
-Beicon a la plancha y queso fundido.</p>
+<div class="item"><strong>Beicon con queso <span class="precio">6€</span></strong><br>
+Beicon a la plancha y queso fundido.</div>
 
-<p><strong>Lomo con queso</strong> <span class="precio">6€</span><br>
-Lomo de cerdo a la plancha y queso fundido.</p>
+<div class="item"><strong>Lomo con queso <span class="precio">6€</span></strong><br>
+Lomo de cerdo a la plancha y queso fundido.</div>
 
-<p><strong>Calamares con alioli</strong> <span class="precio">8€</span><br>
-Calamares rebozados y alioli.</p>
+<div class="item"><strong>Calamares con alioli <span class="precio">8€</span></strong><br>
+Calamares rebozados y alioli.</div>
 
-<p><strong>Pollo a la plancha con alioli</strong> <span class="precio">8€</span><br>
-Pechuga de pollo a la plancha y alioli.</p>
+<div class="item"><strong>Pollo a la plancha con alioli <span class="precio">8€</span></strong><br>
+Pechuga de pollo a la plancha y alioli.</div>
 
-<p><strong>Vegetal</strong> <span class="precio">6€</span><br>
-Lechuga, tomate, atún, huevo cocido y mayonesa.</p>
+<div class="item"><strong>Vegetal <span class="precio">6€</span></strong><br>
+Lechuga, tomate, atún, huevo cocido y mayonesa.</div>
 
 </div>
 <div class="card">
 <h2>🍟 Raciones</h2>
-<p>Croquetas jamón y pollo <span class="precio">9,50€</span></p>
+<p>Croquetas jamón <span class="precio">9,50€</span></p>
 <p>Calamares <span class="precio">9,50€</span></p>
 <p>Patatas Ranchi <span class="precio">10€</span></p>
-<p>Fingers de pollo y queso <span class="precio">10€</span></p>
+<p>Fingers de pollo<span class="precio">10€</span></p>
 <p>Patatas Bravas <span class="precio">8€</span></p>
-<p>Patatas Alioli <span class="precio">8€</span></p>
+<p>Patatas Alioli<span class="precio">8€€</span></p>
+<p>Huevos rotos<span class="precio">8,50€</span></p>
+
+<div class="card">
+<h2>Pizzas</h2>
+<p>Jamon y queso<span class="precio">24€</span></p>
+<p>Barbacoa<span class="precio">24€</span></p>
+<p>kebab<span class="precio">24€</span></p>
+
 </div>
 <div class="card">
-<h2>🕒 Horario</h2>
-<p>Bar: 10:30 - 23:30</p>
-<p>Cocina: 13:00 - 16:00 / 19:00 - 22:30</p>
+<h2>Paninis</h2>
+<p>Jamon y queso<span class="precio">11€</span></p>
+<p>Carbonara<span class="precio">11€</span></p>
+<p>Especial<span class="precio">11€</span></p>
 </div>
 </section>
+
+<footer>
+Bar Piscinas Fuentepelayo · ¡Te esperamos!
+</footer>
+
 </body>
 </html>
